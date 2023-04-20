@@ -5,7 +5,7 @@ import { useRoute } from 'vue-router'
 import { storeToRefs } from 'pinia'
 import { NAutoComplete, NButton, NInput, useDialog, useMessage } from 'naive-ui'
 import html2canvas from 'html2canvas'
-import { Message } from './components'
+import { LoginForm, Message, RegisterForm } from './components'
 import { useScroll } from './hooks/useScroll'
 import { useChat } from './hooks/useChat'
 import { useCopyCode } from './hooks/useCopyCode'
@@ -510,6 +510,10 @@ onUnmounted(() => {
               </div>
             </div>
           </template>
+          <div>
+            <LoginForm />
+            <RegisterForm />
+          </div>
         </div>
       </div>
     </main>
